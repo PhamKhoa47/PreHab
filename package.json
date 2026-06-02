@@ -1,9 +1,9 @@
 {
-  "name": "react-example",
+  "name": "prehab",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://prehab-active-aging.com",
+  "homepage": "https://phamkhoa47.github.io/PreHab/",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build && node postbuild.js",
