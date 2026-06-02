@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Brand Colors */
+  --color-surface: #f9f9fb;
+  --color-surface-dim: #d9dadc;
+  --color-surface-bright: #f9f9fb;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f3f3f5;
+  --color-surface-container: #eeeef0;
+  --color-surface-container-high: #e8e8ea;
+  --color-surface-container-highest: #e2e2e4;
+
+  --color-on-surface: #1a1c1d;
+  --color-on-surface-variant: #574237;
+  
+  --color-inverse-surface: #2f3132;
+  --color-inverse-on-surface: #f0f0f2;
+  
+  --color-outline: #8b7265;
+  --color-outline-variant: #dec0b1;
+  
+  --color-primary: #9a4600;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #f47920;
+  --color-on-primary-container: #572400;
+  --color-inverse-primary: #ffb68d;
+  --color-primary-fixed: #ffdbc9;
+  --color-primary-fixed-dim: #ffb68d;
+  --color-on-primary-fixed: #321200;
+  --color-on-primary-fixed-variant: #763300;
+
+  --color-secondary: #5f5e5e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e2dfde;
+  --color-on-secondary-container: #636262;
+  --color-secondary-fixed: #e5e2e1;
+  --color-secondary-fixed-dim: #c8c6c5;
+  --color-on-secondary-fixed: #1c1b1b;
+  --color-on-secondary-fixed-variant: #474746;
+
+  --color-tertiary: #675d50;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #a69a8b;
+  --color-on-tertiary-container: #3a3227;
+  --color-tertiary-fixed: #efe0d0;
+  --color-tertiary-fixed-dim: #d2c4b4;
+  --color-on-tertiary-fixed: #211a10;
+  --color-on-tertiary-fixed-variant: #4e4539;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  
+  --color-background: #f9f9fb;
+  --color-on-background: #1a1c1d;
+
+  --spacing-base: 16px;
+  --spacing-stack-sm: 12px;
+  --spacing-stack-md: 24px;
+  --spacing-stack-lg: 48px;
+  --spacing-margin-mobile: 20px;
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1280px;
+}
+
+@utility font-display-lg {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@utility font-display-lg-mobile {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+@utility font-headline-md {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+@utility font-headline-sm {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@utility font-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility font-body-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility font-label-md {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility ambient-shadow {
+  box-shadow: 0 4px 20px -4px rgba(244, 121, 32, 0.08);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-sans antialiased selection:bg-primary-fixed selection:text-primary;
+  }
+}

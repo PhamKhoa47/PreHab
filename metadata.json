@@ -1,0 +1,8 @@
+{
+  "name": "Remix: PreHab Center 02",
+  "description": "Kiến tạo nền tảng thể chất – Phát triển vóc dáng toàn diện.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
